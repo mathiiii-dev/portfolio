@@ -8,7 +8,7 @@ import Projects from "../routes/projects";
 
 const App = () => {
     return (
-        <TranslateProvider root="i18n" lang="fr">
+        <TranslateProvider lang="fr">
             <div id="app" className="container grid-xl">
                 <Header />
                 <Router>
