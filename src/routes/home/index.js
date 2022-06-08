@@ -53,11 +53,10 @@ const Home = () => {
                 <p class="text-center">{t('home.stack')}</p>
                 <div className="bg-circle radius-1 my-2 p-centered">
                     <div className="stack">
-                        <img src="/assets/logo/mercure.png" alt="mercure" className="img-responsive resize-img float-right m-2" />
                         <img src="/assets/logo/symfony.png" alt="symfony" className="img-responsive resize-img float-left m-2" />
                         <img src="/assets/logo/sql.png" alt="sql" className="img-responsive resize-img float-right m-2" />
                         <img src="/assets/logo/php.svg" alt="php" className="img-responsive resize-img float-left m-2" />
-                        <img src="/assets/logo/postman.png" alt="postman" className="img-responsive resize-img float-right m-2" />
+                        <img src="/assets/logo/strapi.webp" alt="strapi" className="img-responsive resize-img float-right m-2" />
                     </div>
                     <p className="text-center">Backend</p>
                 </div>
@@ -76,9 +75,8 @@ const Home = () => {
                         <div className="bg-circle radius-3 my-2 p-centered">
                             <div className="stack">
                                 <img src="/assets/logo/next.png" alt="next" className="img-responsive resize-img float-right m-2" />
-                                <img src="/assets/logo/nuxt.png" alt="nuxt" className="img-responsive resize-img float-right m-2" />
-                                <img src="/assets/logo/preact.png" alt="preact" className="img-responsive resize-img float-left mx-2" />
-                                <img src="/assets/logo/strapi.webp" alt="strapi" className="img-responsive resize-img float-left mt-2" />
+                                <img src="/assets/logo/nuxt.png" alt="nuxt" className="img-responsive resize-img float-left m-2" />
+                                <img src="/assets/logo/preact.png" alt="preact" className="img-responsive resize-img float-right m-2" />
                             </div>
                             <p className="text-center">Frontend</p>
                         </div>
