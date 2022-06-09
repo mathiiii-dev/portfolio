@@ -28,6 +28,9 @@
   },
   "dependencies": {
     "@denysvuika/preact-translate": "^0.3.0",
+    "dotenv": "^16.0.1",
+    "dotenv-safe": "^8.2.0",
+    "dotenv-webpack": "^7.1.0",
     "preact": "^10.3.2",
     "preact-render-to-string": "^5.1.4",
     "preact-router": "^3.2.1",
