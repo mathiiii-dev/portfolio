@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "backend": {
+      "type": "enumeration",
+      "enum": [
+        "PHP",
+        "Symfony",
+        "Strapi"
+      ]
+    },
+    "frontend": {
+      "type": "enumeration",
+      "enum": [
+        "Nuxt",
+        "Next",
+        "Preact",
+        "Twig"
+      ]
+    },
+    "design": {
+      "type": "enumeration",
+      "enum": [
+        "Bootstrap",
+        "Mantine",
+        "Css"
+      ]
+    },
+    "repository": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    }
+  }
+}
