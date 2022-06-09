@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@denysvuika/preact-translate": "^0.3.0",
+    "@preact/prerender-data-provider": "^3.0.1",
     "preact": "^10.3.2",
     "preact-render-to-string": "^5.1.4",
     "preact-router": "^3.2.1",

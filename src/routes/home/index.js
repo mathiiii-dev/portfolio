@@ -14,18 +14,10 @@ const Home = () => {
         return Promise.reject('The Clipboard API is not available.');
     };
 
-    const getFlagEmoji = countryCode => {
-        const codePoints = countryCode
-            .toUpperCase()
-            .split('')
-            .map(char => 127397 + char.charCodeAt());
-        return String.fromCodePoint(...codePoints);
-    }
-
     return (
         <div className="columns margin-perso">
             <div className="column col-6 col-lg-auto">
-                <p className="mb-0 pt-2">📍 Curienne, FR {getFlagEmoji('FR')}</p>
+                <p className="mb-0 pt-2">📍 Curienne, FR 🇫🇷</p>
                 <h1 className="text-bold p-2">
                     {t('home.title')} 👋
                 </h1>
@@ -33,7 +25,7 @@ const Home = () => {
                     {t('home.presentation')}
                 </p>
                 <p class="p-2">
-                    {t('home.opportunities')} {getFlagEmoji('US')} {getFlagEmoji('CA')}
+                    {t('home.opportunities')} 🇺🇸 🇨🇦
                 </p>
                 <div className="columns dark-card">
                     <div className="column col-10 col-lg-auto">
@@ -43,7 +35,7 @@ const Home = () => {
                         <p className="text-large p-2" id="mail">{email}</p>
                     </div>
                     <div className="column col-2">
-                        <button onClick={() => copyToClipboard(email)} className="btn btn-link text-light bg-dark p-2">
+                        <button onClick={() => copyToClipboard(email)} className="btn btn-actions text-light bg-dark p-2">
                             <i className="icon icon-copy">Copie</i>
                         </button>
                     </div>
@@ -62,7 +54,7 @@ const Home = () => {
                 </div>
                 <div className="columns m-2 p-2">
                     <div className="column col-6 col-lg-auto">
-                        <div className="bg-circle radius-2 my-2 p-centered" >
+                        <div className="bg-circle radius-2 my-2 p-centered">
                             <div className="stack">
                                 <img src="/assets/logo/css.png" alt="sql" className="img-responsive resize-img float-left mt-2" />
                                 <img src="/assets/logo/mantine.png" alt="mantine" className="img-responsive resize-img float-right m-2" />
@@ -82,8 +74,6 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     )
