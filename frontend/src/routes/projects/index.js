@@ -1,38 +1,21 @@
 import {h} from 'preact';
-import {useEffect, useState} from "preact/hooks";
-
-const Projects = () => {
-
-    const [projects, setProjects] = useState([]);
-    const [loading, isLoading] = useState(false);
-
-    useEffect(async () => {
-        isLoading(true)
-        const res = await fetch(`${process.env.PREACT_APP_STRAPI_URL}/projects`,
-            {
-                method: 'GET',
-                headers: {
-                    Authorization: `Bearer ${process.env.PREACT_APP_API_TOKEN}`
-                }
-            })
-        const data = await res.json();
-        if(data) {
-            setProjects(data.data)
-            isLoading(false)
-        }
-    }, [])
+import {usePrerenderData} from '@preact/prerender-data-provider';
 
 
+const Projects = (props) => {
 
-    if (loading) {
-        return <p>Loading ...</p>
-    }
+    const [data, loading, error] = usePrerenderData(props);
 
-    return (
-        <>
-            {
-                projects.map((p, idx) => {
-                    console.log(p, projects)
+    if (loading) return <h1>Loading...</h1>;
+
+    if (error) return <p>Error: {error}</p>;
+
+    if (typeof window !== "undefined") {
+        return (
+            <>
+                {data &&
+                data.data.data.map((p, idx) => {
+                    console.log(p, data)
                     return (
                         <div class="dark-card card mt-2" key={idx}>
                             <div class="card-header">
@@ -52,9 +35,10 @@ const Projects = () => {
                         </div>
                     )
                 })
-            }
-        </>
-    )
+                }
+            </>
+        )
+    }
 };
 
 export default Projects;
