@@ -3,9 +3,9 @@
 @import "~spectre.css/dist/spectre-icons.css";
 
 html, body {
-  background-color: #29303e;
-  color: #FAFAFA;
-  font-family: 'Poppins', sans-serif;
+  background-color: #29303e!important;
+  color: #FAFAFA!important;
+  font-family: 'Poppins', sans-serif!important;
 }
 
 * {
@@ -17,10 +17,10 @@ html, body {
 }
 
 .dark-card {
-  background-color: #323c46;
-  padding: 22px;
-  border-radius: 7px;
-  border: none;
+  background-color: #323c46!important;
+  padding: 22px!important;
+  border-radius: 7px!important;
+  border: none!important;
 }
 
 .margin-perso{
