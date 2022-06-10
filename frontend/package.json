@@ -1,45 +1,22 @@
 {
-  "private": true,
   "name": "frontend",
-  "version": "0.0.0",
-  "license": "MIT",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "preact build",
-    "serve": "sirv build --port 8080 --cors --single",
-    "dev": "preact watch",
-    "lint": "eslint src",
-    "test": "jest"
-  },
-  "eslintConfig": {
-    "extends": "preact",
-    "ignorePatterns": [
-      "build/"
-    ]
-  },
-  "devDependencies": {
-    "@preact/prerender-data-provider": "^3.0.1",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-preact-pure": "^2.0.0",
-    "eslint": "^6.0.1",
-    "eslint-config-preact": "^1.1.0",
-    "jest": "^24.9.0",
-    "jest-preset-preact": "^1.0.0",
-    "preact-cli": "^3.0.0-rc.18",
-    "sirv-cli": "1.0.3"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@denysvuika/preact-translate": "^0.3.0",
-    "preact": "^10.7.3",
-    "preact-cli-plugin-env-vars": "^1.2.1",
-    "preact-render-to-string": "^5.2.0",
-    "preact-router": "^4.0.1",
+    "next": "12.1.6",
+    "next-translate": "^1.4.0",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
     "spectre.css": "^0.5.9"
   },
-  "jest": {
-    "preset": "jest-preset-preact",
-    "setupFiles": [
-      "<rootDir>/tests/__mocks__/browserMocks.js",
-      "<rootDir>/tests/__mocks__/setupTests.js"
-    ]
+  "devDependencies": {
+    "eslint": "8.17.0",
+    "eslint-config-next": "12.1.6"
   }
 }

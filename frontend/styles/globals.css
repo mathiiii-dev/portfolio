@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "~spectre.css";
+@import "~spectre.css/dist/spectre-icons.css";
+
+html, body {
+  background-color: #29303e;
+  color: #FAFAFA;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+.dark-card {
+  background-color: #323c46;
+  padding: 22px;
+  border-radius: 7px;
+  border: none;
+}
+
+.margin-perso{
+  margin-top: 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .margin-perso {
+    margin-top: 76px;
+  }
+}
+
+.resize-img {
+  width:33%;
+  height:33%;
+  object-fit: contain
+}
