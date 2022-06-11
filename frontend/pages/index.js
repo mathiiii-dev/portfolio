@@ -70,8 +70,8 @@ export default function Home() {
                         <img src="/logo/strapi.webp" alt="strapi"
                              className="img-responsive resize-img float-right m-2"/>
                     </div>
-                    <p className="text-center">Backend</p>
                 </div>
+                <p className={`p-centered text-center ${styles.textr} ${styles.radiusbd}`}><span className={styles.dot}/>Backend</p>
                 <div className="columns m-2 p-2">
                     <div className="column col-6 col-sm-auto">
                         <div className={`${styles.circle} ${styles.radiusd} my-2 p-centered`}>
@@ -83,10 +83,10 @@ export default function Home() {
                                 <img src="/logo/bootstrap.png" alt="bootstrap"
                                      className="img-responsive resize-img float-left mx-2"/>
                             </div>
-                            <p className="text-center">Design</p>
                         </div>
+                        <p className={`p-centered text-center ${styles.textr} ${styles.radiusbd}`}><span className={styles.dot}/>Design</p>
                     </div>
-                    <div className="column col-6">
+                    <div className="column col-6 p-centered">
                         <div className={`${styles.circle} ${styles.radiust} my-2 p-centered`}>
                             <div className={styles.stack}>
                                 <img src="/logo/next.png" alt="next"
@@ -96,8 +96,8 @@ export default function Home() {
                                 <img src="/logo/twig.png" alt="twig"
                                      className="img-responsive resize-img float-right m-2"/>
                             </div>
-                            <p className="text-center">Frontend</p>
                         </div>
+                        <p className={`p-centered text-center ${styles.textr} ${styles.radiustf}`}><span className={styles.dot}/>Frontend</p>
                     </div>
                 </div>
             </div>

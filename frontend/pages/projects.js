@@ -27,8 +27,8 @@ export default function Projects(projects) {
                                         <div
                                             className="card-subtitle text-gray">{p.attributes.backend} {p.attributes.frontend} {p.attributes.design}</div>
                                     </div>
-                                    <div className="card-body">
-                                        {p.attributes.description}
+                                    <div className="card-body text-justify">
+                                      {p.attributes.description}
                                     </div>
                                     <div className="card-footer">
                                         <a href={p.attributes.website} className="btn-perso outline-perso float-right" target="_blank"

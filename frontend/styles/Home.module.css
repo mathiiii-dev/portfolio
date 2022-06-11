@@ -37,3 +37,27 @@
 .text {
     margin-left: 22px;
 }
+
+.textr {
+    background-color: #323c46;
+    padding: 7px;
+    width: 130px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.radiusbd {
+    border-radius: 75px 75px 75px 0px;
+}
+
+.radiustf {
+    border-radius: 75px 75px 0px 75px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #f6c15c;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
