@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+  "plugins": [
+    "react-hooks"
+  ],
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react-hooks/rules-of-hooks": "off", // Vérifie les règles des Hooks
+    "react-hooks/exhaustive-deps": "warn"  // Vérifie les tableaux de dépendances
+  }
 }
