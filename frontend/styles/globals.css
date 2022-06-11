@@ -24,13 +24,21 @@ html, body {
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
+.card-margin {
+  margin-top: 76px;
+}
+
 .margin-perso{
+  margin-top: 11px;
+}
+
+.margin-perso-projects{
   margin-top: 11px;
 }
 
 @media screen and (min-width: 768px) {
   .margin-perso {
-    margin-top: 76px;
+    margin-top: 96px;
   }
 }
 
@@ -44,4 +52,49 @@ html, body {
   height: 20px;
   width: 35px;
   margin-top: 4px;
+}
+
+.btn-perso {
+  cursor: pointer;
+  display: inline-block;
+  font-size: .8rem;
+  height: 1.8rem;
+  line-height: 1.2rem;
+  outline: none;
+  padding: 0.25rem 0.4rem;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  appearance: none;
+  margin-right: 0.4rem;
+}
+
+.plain {
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  color: #29303e !important
+}
+
+.outline-perso {
+  border: #FAFAFA 1px solid;
+  border-radius: 5px;
+  color: #FAFAFA!important;
+}
+
+.btn-perso:link {
+  text-decoration: none;
+}
+
+.btn-perso:visited {
+  text-decoration: none;
+}
+
+.btn-perso:hover {
+  text-decoration: none;
+}
+
+.btn-perso:active {
+  text-decoration: none;
 }

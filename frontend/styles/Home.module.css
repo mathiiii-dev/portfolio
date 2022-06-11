@@ -25,3 +25,15 @@
     margin-left: 7%;
     padding-top: 13%;
 }
+
+.title {
+    font-size: 3rem!important;
+}
+
+.border {
+    border-left: #f6c15c 2px solid;
+}
+
+.text {
+    margin-left: 22px;
+}

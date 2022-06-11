@@ -10,6 +10,9 @@
     ],
     "/": [
       "home"
+    ],
+    "/projects" : [
+      "projects"
     ]
   }
 }

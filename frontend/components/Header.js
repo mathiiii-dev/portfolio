@@ -21,11 +21,11 @@ export default function Header() {
                     </Link>
                 </section>
                 <section className="navbar-section">
-                    <a href="https://github.com/mathiiii-dev" className={`${styles.btn} ${styles.plain}`}
+                    <a href="https://github.com/mathiiii-dev" className="btn-perso plain"
                        target="_blank" rel="noreferrer">
                         Github
                     </a>
-                    <a href="https://twitter.com/_devMathias" className={`${styles.btn} ${styles.outline}`}
+                    <a href="https://twitter.com/_devMathias" className={"btn-perso outline-perso"}
                        target="_blank" rel="noreferrer">
                         Twitter
                     </a>
@@ -38,36 +38,36 @@ export default function Header() {
                 </section>
             </header>
             <header className="navbar my-2 py-2 show-sm">
-                <button className={open ? 'd-hide' : `${styles.btn} ${styles.plain} ${styles.burger}`}>
+                <button className={open ? 'd-hide' : `btn-perso plain ${styles.burger}`}>
                     <i className="icon icon-menu" onClick={() => isOpen(true)}/>
                 </button>
-                <button className={open ? `${styles.btn} ${styles.plain} ${styles.burger}` : 'd-hide'}>
+                <button className={open ? `btn-perso plain ${styles.burger}` : 'd-hide'}>
                     <i className="icon icon-cross" onClick={() => isOpen(false)}/>
                 </button>
                 <div className={open ? '' : 'd-hide'}>
                     <ul className="menu dark-card mt-2">
                         <li className="menu-item m-2 p-1">
                             <Link href={`/${lang}`}>
-                                <span className={`${styles.btn} ${styles.outline} ${styles.full}`}>
+                                <span className={`btn-perso outline-perso ${styles.full}`}>
                                     {t('home')}
                                 </span>
                             </Link>
                         </li>
                         <li className="menu-item m-2 p-1">
                             <Link href={`${lang}/projects`}>
-                                <span className={`${styles.btn} ${styles.outline} ${styles.full}`}>
+                                <span className={`btn-perso outline-perso ${styles.full}`}>
                                     {t('projects')}
                                 </span>
                             </Link>
                         </li>
                         <li className="menu-item m-2 p-1">
                             <Link href="https://github.com/mathiiii-dev">
-                                <span className={`${styles.btn} ${styles.outline} ${styles.full}`}>Github</span>
+                                <span className={`btn-perso outline-perso ${styles.full}`}>Github</span>
                             </Link>
                         </li>
                         <li className="menu-item m-2 p-1">
                             <Link href="https://twitter.com/_devMathias">
-                                <span className={`${styles.btn} ${styles.outline} ${styles.full}`}>Twitter</span>
+                                <span className={`btn-perso outline-perso ${styles.full}`}>Twitter</span>
                             </Link>
                         </li>
                         <li className="menu-item m-2 p-1 text-center">

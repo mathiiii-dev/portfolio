@@ -1,32 +1,3 @@
-.btn {
-    cursor: pointer;
-    display: inline-block;
-    font-size: .8rem;
-    height: 1.8rem;
-    line-height: 1.2rem;
-    outline: none;
-    padding: 0.25rem 0.4rem;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-    appearance: none;
-    margin-right: 0.4rem;
-}
-
-.plain {
-    background-color: #FAFAFA;
-    border-radius: 5px;
-    color: #29303e !important
-}
-
-.outline {
-    border: #FAFAFA 1px solid;
-    border-radius: 5px;
-    color: #FAFAFA!important;
-}
-
 .full {
     width: 100%;
 }
@@ -35,20 +6,4 @@
     background-color: #323c46;
     border: none;
     color: white!important;
-}
-
-.btn:link {
-    text-decoration: none;
-}
-
-.btn:visited {
-    text-decoration: none;
-}
-
-.btn:hover {
-    text-decoration: none;
-}
-
-.btn:active {
-    text-decoration: none;
 }

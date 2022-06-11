@@ -29,32 +29,32 @@ export default function Home() {
             <div className="column col-6 col-lg-auto">
                 <p className="mb-0 pt-2 text-normal">📍 {t('near')} Chambéry, FR <img src="/flag/france.svg"
                                                                                       className="svg"/></p>
-                <h1 className="text-bold p-2">
+                <h1 className={`text-bold p-2 ${styles.title}`}>
                     {t('title')} 👋
                 </h1>
-                <p className="text-justify p-2">
-                    {t('presentation')}
-                </p>
-                <p className="p-2">
-                    {t('opportunities')} <img src="/flag/usa.svg" className="svg"/> <img src="/flag/canada.svg"
-                                                                                         className="svg"/>
-                </p>
-                <div className="columns dark-card">
+                <div className={styles.border}>
+                    <p className={`${styles.text} text-justify p-2`}>
+                        {t('presentation')}
+                    </p>
+                    <p className={`${styles.text} text-justify p-2`}>
+                        {t('opportunities')} <img src="/flag/usa.svg" className="svg"/> <img src="/flag/canada.svg"
+                                                                                             className="svg"/>
+                    </p>
+                </div>
+                <div className="columns dark-card card-margin">
                     <div className="column col-10 col-lg-auto">
-                        <p className="p-2">
-                            {t('contact')}
-                        </p>
-                        <p className="text-large p-2" id="mail">{email}</p>
-                    </div>
-                    <div className="column col-2">
                         <button onClick={() => copyToClipboard(email)}
-                                className="btn btn-actions text-light bg-dark p-2">
+                                className="btn btn-actions text-light bg-dark p-2 float-right">
                             <i className="icon icon-copy">Copie</i>
                         </button>
+                        <p>
+                            {t('contact')}
+                        </p>
+                        <p className="text-large" id="mail">{email}</p>
                     </div>
                 </div>
             </div>
-            <div className="column col-sm-12 col-md-6">
+            <div className="column col-sm-12 col-md-6 card-margin">
                 <p className="text-center">{t('stack')}</p>
                 <div className={`${styles.circle} ${styles.radiusu} my-2 p-centered`}>
                     <div className={styles.stack}>
