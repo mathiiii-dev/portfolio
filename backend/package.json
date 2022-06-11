@@ -17,7 +17,7 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.1.12",
+    "@strapi/plugin-i18n": "^4.1.12",
     "@strapi/plugin-users-permissions": "4.1.12",
     "@strapi/strapi": "4.1.12",
     "better-sqlite3": "7.4.6",
