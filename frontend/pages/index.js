@@ -1,6 +1,7 @@
 import {useState} from "react";
 import useTranslation from 'next-translate/useTranslation'
 import styles from '../styles/Home.module.css'
+import Head from 'next/head'
 
 export default function Home() {
 
@@ -26,6 +27,10 @@ export default function Home() {
 
     return (
         <div className="columns margin-perso">
+            <Head>
+                <title>{t('head.title')}</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+            </Head>
             <div className="column col-6 col-lg-auto">
                 <p className="mb-0 pt-2 text-normal">📍 {t('near')} Chambéry, FR <img src="/flag/france.svg"
                                                                                       className="svg"/></p>

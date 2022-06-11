@@ -4,5 +4,8 @@
     "school": "School project",
     "side": "Side project",
     "pro": "pro project"
+  },
+  "head": {
+    "title": "Projects"
   }
 }
