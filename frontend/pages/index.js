@@ -4,23 +4,22 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
-    const {t, lang} = useTranslation('home')
+    const {t} = useTranslation('home')
 
     const [email] = useState('mathias.micheli@outlook.fr')
-
 
     const copyToClipboard = async (str, e) => {
 
         const useToast = (await import('@kayoshi-dev/usetoast')).default
         const {createToast} = useToast();
-        createToast(
-            t('email'),
-            "info",
-            `<i class="icon icon-check"></i>`
-        );
-        if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
-            return navigator.clipboard.writeText(str);
 
+        if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+            createToast(
+                t('email'),
+                "info",
+                `<i class="icon icon-check"></i>`
+            );
+            return navigator.clipboard.writeText(str);
         }
         return Promise.reject('The Clipboard API is not available.');
     }
@@ -28,7 +27,8 @@ export default function Home() {
     return (
         <div className="columns margin-perso">
             <div className="column col-6 col-lg-auto">
-                <p className="mb-0 pt-2 text-normal">📍 {t('near')} Chambéry, FR 🇫🇷</p>
+                <p className="mb-0 pt-2 text-normal">📍 {t('near')} Chambéry, FR <img src="/flag/france.svg"
+                                                                                      className="svg"/></p>
                 <h1 className="text-bold p-2">
                     {t('title')} 👋
                 </h1>
@@ -36,7 +36,8 @@ export default function Home() {
                     {t('presentation')}
                 </p>
                 <p className="p-2">
-                    {t('opportunities')} 🇺🇸 🇨🇦
+                    {t('opportunities')} <img src="/flag/usa.svg" className="svg"/> <img src="/flag/canada.svg"
+                                                                                         className="svg"/>
                 </p>
                 <div className="columns dark-card">
                     <div className="column col-10 col-lg-auto">
@@ -67,7 +68,7 @@ export default function Home() {
                     <p className="text-center">Backend</p>
                 </div>
                 <div className="columns m-2 p-2">
-                    <div className="column col-6 col-lg-auto">
+                    <div className="column col-6 col-sm-auto">
                         <div className={`${styles.circle} ${styles.radiusd} my-2 p-centered`}>
                             <div className={styles.stack}>
                                 <img src="/logo/css.png" alt="sql"
@@ -87,7 +88,7 @@ export default function Home() {
                                      className="img-responsive resize-img float-right m-2"/>
                                 <img src="/logo/nuxt.png" alt="nuxt"
                                      className="img-responsive resize-img float-left m-2"/>
-                                <img src="/logo/preact.png" alt="preact"
+                                <img src="/logo/twig.png" alt="twig"
                                      className="img-responsive resize-img float-right m-2"/>
                             </div>
                             <p className="text-center">Frontend</p>

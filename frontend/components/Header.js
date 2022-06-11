@@ -30,10 +30,10 @@ export default function Header() {
                         Twitter
                     </a>
                     <button className="btn btn-link" onClick={() => setLanguage('en')}>
-                        <h4>🇺🇸</h4>
+                        <img src="/flag/usa.svg" className="svg"/>
                     </button>
                     <button className="btn btn-link" onClick={() => setLanguage('fr')}>
-                        <h4>🇫🇷</h4>
+                        <img src="/flag/france.svg" className="svg"/>
                     </button>
                 </section>
             </header>
@@ -72,12 +72,12 @@ export default function Header() {
                         </li>
                         <li className="menu-item m-2 p-1 text-center">
                             <button className="btn btn-link" onClick={() => setLanguage('en')}>
-                                <h4>🇺🇸</h4>
+                                <img src="/flag/usa.svg" className="svg"/>
                             </button>
                         </li>
                         <li className="menu-item m-2 p-1 text-center">
                             <button className="btn btn-link" onClick={() => setLanguage('fr')}>
-                                <h4>🇫🇷</h4>
+                                <img src="/flag/france.svg" className="svg"/>
                             </button>
                         </li>
                     </ul>

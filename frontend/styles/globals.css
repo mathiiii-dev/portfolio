@@ -39,3 +39,9 @@ html, body {
   height:33%;
   object-fit: contain
 }
+
+.svg {
+  height: 20px;
+  width: 35px;
+  margin-top: 4px;
+}
