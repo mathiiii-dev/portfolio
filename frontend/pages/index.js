@@ -7,7 +7,7 @@ export default function Home() {
 
     const {t} = useTranslation('home')
 
-    const [email] = useState('mathias.micheli@outlook.fr')
+    const [email] = useState('mathias.micheli [at] outlook.fr')
 
     const copyToClipboard = async (str, e) => {
 
