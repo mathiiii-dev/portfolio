@@ -7,7 +7,8 @@ export default function Home() {
 
     const {t} = useTranslation('home')
 
-    const [email] = useState('mathias.micheli [at] outlook.fr')
+    const [displayedEmail] = useState('mathias.micheli [at] outlook.fr')
+    const [email] = useState('mathias.micheli@outlook.fr')
 
     const copyToClipboard = async (str, e) => {
 
@@ -55,7 +56,7 @@ export default function Home() {
                         <p>
                             {t('contact')}
                         </p>
-                        <p className="text-large" id="mail">{email}</p>
+                        <p className="text-large" id="mail">{displayedEmail}</p>
                     </div>
                 </div>
             </div>
